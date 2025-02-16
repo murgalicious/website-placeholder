@@ -1,21 +1,10 @@
 body {
   margin: 0;
-  background-image: url(background-image.jpg);
+  background-image: url('background-image2.jpg'); /* Använd din 1024x1024-bild här */
   background-size: cover;
   background-position: center;
-}
-
-p {
-    display: block;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
 .viewport {
@@ -24,60 +13,53 @@ a {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Mörk overlay för bättre textläsbarhet */
 }
 
-.text-box {
-  height: auto;
-  width: auto;
-  margin: 1vh;
-  background-color: rgba(255, 255, 255, 0.9); /* Genomskinlig bakgrund */
-  border-radius: 1vh;
-  justify-content: center;
-  align-items: center;
-  border: 0.25vh solid #808080;
-  padding: 2vh;
+.content-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Genomskinlig vit bakgrund */
+  padding: 4vh;
+  border-radius: 2vh;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Mjuk skugga för djup */
+  max-width: 90%;
 }
 
 .title {
   font-size: 6vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 1vh;
-  color: #333; /* Mörk text för bättre läsbarhet */
+  margin-bottom: 2vh;
+  color: #ff6f61; /* Uppmärksamhetsfångande färg */
 }
 
 .subtitle {
-  font-size: 4vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 0 1vh 1vh 1vh;
-  color: #555; /* Mörkare text */
+  font-size: 3vh;
+  margin-bottom: 4vh;
+  color: #555;
 }
 
 .cta-button {
-  display: block;
-  margin: 2vh auto;
-  padding: 1.5vh 3vh;
+  display: inline-block;
+  padding: 2vh 4vh;
   font-size: 3vh;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ff6f61; /* Rolig, uppseendeväckande färg */
+  background-color: #ff6f61; /* Stark, lockande färg */
   color: white;
   border-radius: 1vh;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
   background-color: #ff3b2f; /* Mörkare vid hover */
+  transform: scale(1.05); /* Lite större vid hover */
 }
 
-.footer {
-  font-size: 1vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 0 1vh 1vh 1vh;
-  color: white;
-  position: absolute;
-  bottom: 0;
+.discount-text {
+  font-size: 2.5vh;
+  margin-top: 3vh;
+  color: #333;
+}
+
+.discount-text strong {
+  color: #ff6f61; /* Samma färg som knappen för konsistens */
 }
